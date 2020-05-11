@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="452.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplikacja_rmi.klienci.Klient_controller">
+   <children>
+      <ListView fx:id="listView" layoutX="24.0" layoutY="231.0" prefHeight="201.0" prefWidth="319.0" />
+      <Label layoutX="158.0" layoutY="62.0" text="Minimum" />
+      <Label layoutX="24.0" layoutY="62.0" text="Ilość elementów" />
+      <Label layoutX="270.0" layoutY="62.0" text="Maximum" />
+      <Button layoutX="47.0" layoutY="126.0" mnemonicParsing="false" onAction="#wylosuj_liczby" prefHeight="25.0" prefWidth="126.0" text="Generuj" />
+      <TextField fx:id="ilosc" layoutX="24.0" layoutY="88.0" prefHeight="25.0" prefWidth="86.0" />
+      <TextField fx:id="minimum" layoutX="140.0" layoutY="88.0" prefHeight="25.0" prefWidth="86.0" />
+      <TextField fx:id="maximum" layoutX="254.0" layoutY="88.0" prefHeight="25.0" prefWidth="86.0" />
+      <Button layoutX="273.0" layoutY="185.0" mnemonicParsing="false" onAction="#sortuj" prefHeight="25.0" prefWidth="67.0" text="Posortuj" />
+      <ChoiceBox fx:id="lista_serwerow_box" layoutX="24.0" layoutY="185.0" prefHeight="25.0" prefWidth="126.0" />
+      <Label layoutX="24.0" layoutY="160.0" />
+      <Label layoutX="24.0" layoutY="160.0" text="Wybierz serwer do sortowania" />
+      <Button layoutX="191.0" layoutY="126.0" mnemonicParsing="false" onAction="#pokaz_liczby" prefHeight="25.0" prefWidth="126.0" text="Pokaż" />
+      <Button layoutX="158.0" layoutY="185.0" mnemonicParsing="false" onAction="#odswiez" prefHeight="25.0" prefWidth="102.0" text="Odśwież" />
+      <Label fx:id="tytul" layoutX="18.0" layoutY="14.0" prefHeight="35.0" prefWidth="203.0" text="Ilość elementów">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
